@@ -1,0 +1,12 @@
+.form{
+    display: block;
+    margin: 28px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+}
+.form label{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 10px 0;
+}
