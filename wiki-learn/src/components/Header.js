@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "@/styles/header.module.css";
+import Image from 'next/image';
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
@@ -34,7 +35,14 @@ export default function Header() {
   <div className="container mx-auto flex flex-wrap items-center justify-between py-4 px-6">
     <div className="flex items-center justify-between w-full">
       <div className="text-xl font-bold">
-        <Link href="/">Wicki-learning</Link>
+        <Link href="/">
+        <Image 
+          src="/icon (3).png" 
+          alt="Mon logo"   
+          width={90}       
+          height={90}      
+        />
+        </Link>
       </div>
       <button
         className="text-gray-800 hover:text-gray-600 focus:outline-none md:hidden"
@@ -52,8 +60,6 @@ export default function Header() {
         </li>
         {isAuthenticated ? (
         <><li>
-                <Link href="/profile">Formations</Link>
-              </li><li>
                   <Link href="/new_formation">Ajouter</Link>
                 </li><>
                   <li className="md:hidden">

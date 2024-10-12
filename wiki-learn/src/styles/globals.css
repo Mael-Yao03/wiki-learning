@@ -1,28 +1,48 @@
+/* styles/globals.css */
+
+/* Importations Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Variables CSS pour les thèmes */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: ) {
+/* Media Query pour les préférences de thème */
+@media (prefers-color-scheme: dark) { /* Spécifie 'dark' ou 'light' */
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+/* Importation des polices Google */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap');
 
-body {
-  font-family: "Inter", sans-serif;
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    /* background-color: rgb(104, 171, 248); */
+}
 
+body {
+    font-family: 'Montserrat', serif;
+    background: url('/i.jpg') no-repeat center center;
+    background-size: cover;
+}
 
+/* Styles Tailwind personnalisés */
 @layer utilities {
   .text-balance {
     text-wrap: balance;

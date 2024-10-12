@@ -1,0 +1,88 @@
+/* styles/Home.module.css */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ansut {
+    position: absolute;
+    top: 600px;
+    width: 15%;
+    left: 43%;
+}
+
+.modalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalContentContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gradeDetails p {
+    margin: 0.5rem 0;
+}
+
+.modalButtonContainer button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gameQuizContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gameDetailsContainer h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.gameQuestionContainer h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.gameOptionsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.option {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+}
+
+.nextButtonContainer button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0b3a86;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.image {
+    margin-top: 50px;
+    width: 100px;
+}

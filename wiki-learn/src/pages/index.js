@@ -19,14 +19,15 @@ export default function Home() {
     <>
       <Header />
 
-
+{/* Tochuu avec une image de fond */}
 <div className="relative w-full h-[300px] bg-cover bg-center" style={{ backgroundImage: "url('https://png.pngtree.com/background/20230709/original/pngtree-open-book-print-learn-paper-photo-picture-image_4192019.jpg')" }}>
-  <div className="absolute inset-0 bg-black/50"></div>
+  <div className="absolute inset-0 bg-black/50"></div> {/* Overlay pour rendre le texte plus lisible */}
   <div className="relative z-10 flex items-center justify-center h-full">
-    <h1 className="text-4xl font-bold text-white">Bienvenue sur notre site</h1>
+    <h1 className="text-4xl font-bold text-white">Bienvenue sur Le wikimedien</h1>
   </div>
 </div>
 
+{/* Rest of your content */}
 <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-3">
   {movies.map((movie) => (
     <div
